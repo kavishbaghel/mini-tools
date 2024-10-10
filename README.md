@@ -6,5 +6,9 @@ Mini Tools for experimenting and deploying on the cloud.
 
 &rarr; [Base64 Encoder Decoder](./basic-tools/base64-encoder-decoder/)
 
-&rarr; [MD5 Hash Generator](./basic-tools/hash-generator/)
+&rarr; [Hash Generator](./basic-tools/hash-generator/)
+
+&rarr; [AES Encryption/Decryption](./basic-tools/aes-tool/)
+
+&rarr; [RSA Encryption/Decryption](./basic-tools/rsa-tool/)
 
