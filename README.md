@@ -2,13 +2,13 @@
 
 Mini Tools for experimenting and deploying on the cloud.
 
-&rarr; [BasicAuth Generator](./basic-tools/basic-auth-generator/)
+* [AWS](./aws/)
 
-&rarr; [Base64 Encoder Decoder](./basic-tools/base64-encoder-decoder/)
+* [GCP](./gcp/)
 
-&rarr; [Hash Generator](./basic-tools/hash-generator/)
+* [Basic Tools and Scripts](./basic-tools/)
 
-&rarr; [AES Encryption/Decryption](./basic-tools/aes-tool/)
+Please add other topics via pull requests which you find suitable for this repository.
 
-&rarr; [RSA Encryption/Decryption](./basic-tools/rsa-tool/)
+Thank you :)
 
