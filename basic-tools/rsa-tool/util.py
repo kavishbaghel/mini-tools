@@ -55,7 +55,7 @@ def decrypt_data(private_key_path="private.pem", data=None, hash_algo="SHA256"):
             data = prv.read()
         prv_key = RSA.import_key(data)
         if hash_algo == "SHA256" or hash_algo == "SHA384" or hash_algo == "SHA512":
-            cipher = PKCS1_OAEP.new(hashAlgo=hash_algo, key=pub_key)
+            cipher = PKCS1_OAEP.new(hashAlgo=hash_algo, key=prv_key)
         else:
             raise ValueError("Wrong hash algo provided. Allowed Values - SHA256, SHA384, and SHA512")
         return cipher.decrypt(data)
