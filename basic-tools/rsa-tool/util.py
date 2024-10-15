@@ -2,6 +2,13 @@ import argparse
 from Cryptodome.PublicKey import RSA
 from Cryptodome.Cipher import PKCS1_OAEP
 
+def gen_args():
+    parser = argparse.ArgumentParser(prog="python rsa.py", 
+                                     description="This program is used to generate a rsa key pair, encrypt and decrypt data using RSA.")
+    parser.add_argument("-a", "--action", type=str, help="The action to perform: \n\n genkey -> To generate rsa key pair and save it to the desired path by providing the private key path and public key path. \n\n ecrypt -> To encrypt the provided data. \n\n decrypt -> To decrypt the provided data.")
+    parser.add_argument("-s", "--size", type=str, help="The size of the rsa key. To be specified when the genkey action is provided. Allowed values are - md5, sha256, sha384, and sha512.")
+    return parser.parse_args()
+
 '''
 This function generates an rsa private key and public key pair in PEM format for encryption and decryption purposes.
 
